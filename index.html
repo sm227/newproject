@@ -1,0 +1,51 @@
+<HTML>
+    <HEAD>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <TITLE>(제목 없음)</TITLE>
+
+    <script language="javascript">
+  
+    function login_page(form) {
+    //원하는 패스워드를 설정
+    if (form.pass.value=="0402") {
+    //패스워드가 일치하면 이동할 문서의 경로
+    location="home.html"
+    } else {
+    alert("Password is incorrect.")
+    }
+    }
+
+    </script>
+    <style>
+        .index {
+            margin-top: 300px;
+            text-align: center;
+        }
+    </style>
+    
+    </HEAD>
+    
+    <body>
+
+    <div class="index">
+    
+    <p>
+    Please enter a password</p>
+    <form name="loginForm">
+    <p style="margin-bottom:20;"> 비밀번호
+    <input name="pass" type="password" size="12">
+    <input type="button" value="확 인" onClick="login_page(this.form)" style="font-weight:bolder; font-size:4mm;"><BR>
+    </form>
+    <p></p>
+    </div>
+    </body>
+</HTML>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false"></body>
+
+
+
+
+    
+
+
